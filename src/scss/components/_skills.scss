@@ -1,0 +1,38 @@
+.skills {
+    margin-top: 10rem;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__box {
+
+        &:not(:last-of-type) {
+            margin-bottom: 4rem;
+            color: $color-primary;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(7, 10rem);
+        gap: 3rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    &__name {
+        font-size: 1.6rem;
+    }
+
+}

@@ -59,18 +59,27 @@
 
 @keyframes change-icon-bg {
     0%{
-        background-color: $color-secondary;
+        fill: $color-primary;
+        transform: scale(1);
     }
 
-    25% {
-        background-color: $color-secondary-dark;
+    20% {
+        fill: $color-primary-dark;
+        transform: scale(1.2)
     }
 
-    50% {
-        background-color: $color-special;
+    60% {
+        fill: $color-primary;
+        transform: scale(1.2)
     }
 
-    100% {
-        background-color: $color-secondary-light;
+    80% {
+        fill: $color-primary-light;
+        transform: scale(1.2)
+    }
+
+    100%{
+        fill: $color-primary;
+        transform: scale(1)
     }
 }

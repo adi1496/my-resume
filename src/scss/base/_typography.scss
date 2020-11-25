@@ -8,9 +8,20 @@
 }
 
 .heading-3 {
+    color: $color-secondary;
     font-size: 5rem;
+    font-weight: 600;
     text-transform: uppercase;
     grid-column: 1 / -1;
     justify-self: center;
-    text-shadow: 0rem 0rem 3rem rgba($color-primary, 1);
+    text-shadow: 0rem 0rem 3rem rgba($color-secondary, 1);
+}
+
+
+.heading-4 {
+    font-size: 3rem;
+}
+
+.heading-5 {
+    font-size: 2rem;
 }

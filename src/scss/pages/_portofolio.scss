@@ -1,0 +1,11 @@
+.portofolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background-color: $color-primary;
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
+
+    &__heading {
+        margin-top: 20rem;
+    }
+}
