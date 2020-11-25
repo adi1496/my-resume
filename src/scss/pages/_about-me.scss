@@ -1,0 +1,40 @@
+.about-me {
+    // height: 100vh;
+    margin: 8rem auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__features{
+        grid-column: 1 / -1;
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10rem;
+        justify-items: center;
+
+    }
+
+    &__feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__feature-icon {
+        width: 12rem;
+        height: 12rem;
+        fill: $color-primary;
+        background-color: $color-secondary;
+        padding: 3rem;
+        clip-path: circle(50%);
+        animation: change-icon-bg 20s infinite;
+    }
+
+    &__feature-text{
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        color: $color-primary;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,41 @@
+// Colors
+$color-primary-light: #507192;
+$color-primary: #2c3e50;
+$color-primary-dark: #141c24;
+
+$color-secondary-light: #eda25f;
+$color-secondary: #e67e22;
+$color-secondary-dark: #a15512;
+
+$color-white: #ffffff;
+
+$color-special: #c0392b;
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;   // 1rem = 10px
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+.content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30rem;
+}

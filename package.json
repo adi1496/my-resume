@@ -1,0 +1,24 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:scss": "node-sass ./src/scss/main.scss ./src/css/style.css",
+    "watch:scss": "node-sass ./src/scss/main.scss ./src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adi1496/my-resume.git"
+  },
+  "author": "Adrian Matei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adi1496/my-resume/issues"
+  },
+  "homepage": "https://github.com/adi1496/my-resume#readme"
+}

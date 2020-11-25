@@ -1,0 +1,16 @@
+.heading-1 {
+    font-weight: 400;
+    animation: come-from-left 1s ease-out;
+}
+
+.heading-2 {
+    animation: come-from-right 1s ease-out;
+}
+
+.heading-3 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-shadow: 0rem 0rem 3rem rgba($color-primary, 1);
+}

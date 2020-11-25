@@ -1,0 +1,76 @@
+@keyframes rotateAlways {
+    0%{
+        transform: rotateZ(0);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes come-from-left {
+    0%{
+        opacity: 0;
+        transform: translateX(-30rem);
+    }
+
+    90%{
+        opacity: 1;
+        transform: translateX(1rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes come-from-right {
+    0%{
+        opacity: 0;
+        transform: translateX(30rem);
+    }
+
+    90%{
+        opacity: 1;
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scale-btn {
+    0%{
+        transform: scale(1);
+        background-color: $color-secondary;
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+@keyframes change-icon-bg {
+    0%{
+        background-color: $color-secondary;
+    }
+
+    25% {
+        background-color: $color-secondary-dark;
+    }
+
+    50% {
+        background-color: $color-special;
+    }
+
+    100% {
+        background-color: $color-secondary-light;
+    }
+}

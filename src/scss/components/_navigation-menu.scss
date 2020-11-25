@@ -1,0 +1,22 @@
+.navigation {
+    background-color: $color-primary;
+    width: 100vw;
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        color: $color-white;
+    }
+
+    &__item {
+        margin-right: 3rem;
+        padding: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
