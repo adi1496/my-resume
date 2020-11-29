@@ -38,6 +38,18 @@
         height: 5rem;
         fill: $color-white;
         margin-right: 1rem;
+
+        &--linkedin:hover {
+            fill: #0769ad;
+        }
+
+        &--github:hover {
+            fill: #000000;
+        }
+
+        &--hackerrank:hover {
+            fill: #393;
+        }
     }
 
     &__icon-bg {

@@ -9,53 +9,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script defer src="js/animations.js"></script>
+    <script defer type="module" src="js/index.js"></script>
 </head>
 <body>
     <header class="header">
-        <svg class="header__icon-bg header__icon-bg--1">
-            <use xlink:href="img/svg/code.svg#icon-node-dot-js"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--2">
-            <use xlink:href="img/svg/code.svg#icon-jquery"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--3">
-            <use xlink:href="img/svg/code.svg#icon-mongodb"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--4">
-            <use xlink:href="img/svg/code.svg#icon-html5"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--5">
-            <use xlink:href="img/svg/code.svg#icon-css3"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--6">
-            <use xlink:href="img/svg/code.svg#icon-sass"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--7">
-            <use xlink:href="img/svg/code.svg#icon-react"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--8">
-            <use xlink:href="img/svg/code.svg#icon-javascript"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--9">
-            <use xlink:href="img/svg/code.svg#icon-free-code-camp"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--10">
-            <use xlink:href="img/svg/code.svg#icon-document-code"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--11">
-            <use xlink:href="img/svg/code.svg#icon-document-code1"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--12">
-            <use xlink:href="img/svg/code.svg#icon-visualstudiocode"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--13">
-            <use xlink:href="img/svg/code.svg#icon-embed1"></use>
-        </svg>
-        <svg class="header__icon-bg header__icon-bg--14">
-            <use xlink:href="img/svg/code.svg#icon-embed"></use>
-        </svg>
-        
 
         <div class="header__presentation">
             <div class="header__title">
@@ -64,21 +21,21 @@
             </div>
 
             <div class="header__social">
-                <a href="https://www.linkedin.com/in/adi-matei-9a999012a/" class="header__link">
-                    <svg class="header__icon">
+                <!-- <a target="_blank" href="https://www.linkedin.com/in/adi-matei-9a999012a/" class="header__link">
+                    <svg class="header__icon header__icon--linkedin">
                         <use xlink:href="img/svg/social.svg#icon-linkedin"></use>
                     </svg>
                 </a>
-                <a href="https://github.com/adi1496" class="header__link">
-                    <svg class="header__icon">
+                <a target="_blank" href="https://github.com/adi1496" class="header__link">
+                    <svg class="header__icon header__icon--github">
                         <use xlink:href="img/svg/social.svg#icon-github"></use>
                     </svg>
                 </a>
-                <a href="https://www.hackerrank.com/ady_matey" class="header__link">
-                    <svg class="header__icon">
+                <a target="_blank" href="https://www.hackerrank.com/ady_matey" class="header__link">
+                    <svg class="header__icon header__icon--hackerrank">
                         <use xlink:href="img/svg/social.svg#icon-hackerrank"></use>
                     </svg>
-                </a>
+                </a> -->
             </div>
             <button class="header__button">View more</button>
         </div>
@@ -351,46 +308,52 @@
             <h3 class="heading-3 portofolio__heading">My Portofolio</h3>
 
             <div class="portofolio__container">
-                <div class="portofolio__box">
-                    <figure class="portofolio__photo">
-                        <img src="img/crmag-client-cover.png" alt="img" class="portofolio__img">
-                        <h4 class="heading-4 portofolio__project-title">CRMag - Client</h4>
-                    </figure>
-
-                    <div class="portofolio__details-container">
-                        <div class="portofolio__project-summary">This is an online store that consumes an API that I created</div>
-                    </div>
-                </div>
-
-                <div class="portofolio__box">
-                    <figure class="portofolio__photo">
-                        <img src="img/crmag-client-cover.png" alt="img" class="portofolio__img">
-                        <h4 class="heading-4 portofolio__project-title">CRMag - Client</h4>
-                    </figure>
-
-                    <div class="portofolio__tools">
-                        <div class="portofolio__tools--title">Built with:</div>
-                        <ul class="portofolio__tools--list">
-                            <li class="portofolio__tools--item">React</li>
-                            <li class="portofolio__tools--item">React Router DOM</li>
-                            <li class="portofolio__tools--item">JSX</li>
-                            <li class="portofolio__tools--item">CSS</li>
-                            <li class="portofolio__tools--item">Sass</li>
-                            <li class="portofolio__tools--item">CRMag API</li>
-                        </ul>
-                    </div>
-
-                    <div class="portofolio__details-container">
-                        <div class="portofolio__project-summary">This is an online store that consumes an API that I created</div>
-                    </div>
-                </div>
-
-
 
             </div>
 
         </section>
 
+
+
+        <section class="contact">
+            <h3 class="heading-3 contact__heading">Contact Me</h3>
+
+            <div class="contact__form">
+                <div class="contact__text">Have a question? Contact me!</div>
+                <input type="text" class="contact__input" placeholder="Your Name">
+                <input type="email" class="contact__input" placeholder="Your Email">
+                <textarea class="contact__textarea" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="contact__btn">Send</button>
+            </div>
+        </section>
+
     </main>
+
+
+
+
+    <footer class="footer">
+        <div class="footer__social">
+            <!-- <a target="_blank" href="https://www.linkedin.com/in/adi-matei-9a999012a/" class="header__link">
+                <svg class="header__icon header__icon--linkedin">
+                    <use xlink:href="img/svg/social.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            <a target="_blank" href="https://github.com/adi1496" class="header__link">
+                <svg class="header__icon header__icon--github">
+                    <use xlink:href="img/svg/social.svg#icon-github"></use>
+                </svg>
+            </a>
+            <a target="_blank" href="https://www.hackerrank.com/ady_matey" class="header__link">
+                <svg class="header__icon header__icon--hackerrank">
+                    <use xlink:href="img/svg/social.svg#icon-hackerrank"></use>
+                </svg>
+            </a> -->
+        </div>
+
+
+        <div class="footer__legal">Copyright &copy;2020 <span>Adrian Matei</span>. All rights reserved</div>
+    </footer>
+
 </body>
 </html>

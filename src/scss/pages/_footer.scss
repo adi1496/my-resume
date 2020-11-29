@@ -1,0 +1,23 @@
+.footer {
+    height: 20rem;
+    width: 100vw;
+    background-color: $color-primary-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__social {
+
+    }
+
+    &__legal {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        color: $color-secondary;
+
+        span {
+            color: $color-special;
+        }
+    }
+}

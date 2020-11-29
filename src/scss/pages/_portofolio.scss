@@ -4,7 +4,8 @@
     // height: 100vh;
     background-color: $color-primary;
     // background-image: linear-gradient(to bottom, $color-primary, $color-primary-light);
-    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    // padding: 20rem 0;
 
     &__heading {
         margin-top: 10rem;
@@ -99,7 +100,7 @@
             align-self: center;
             list-style: none;
             font-size: 1.6rem;
-            font-weight: 400;
+            font-weight: 600;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem 10rem;
