@@ -42,6 +42,13 @@ const initListeneres = () => {
 
         });
     });
+
+
+    const headerBtnViewMore = document.querySelector('.header__button');
+    headerBtnViewMore.addEventListener('click', event => {
+        event.preventDefault();
+        document.getElementById('about-me').scrollIntoView({behavior: "smooth"});
+    })
 }
 
 export default initListeneres;

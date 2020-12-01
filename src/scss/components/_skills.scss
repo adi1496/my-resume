@@ -5,6 +5,12 @@
     flex-direction: column;
     align-items: center;
 
+    .heading-5 {
+        @media only screen and(max-width: $bp-small) {
+            padding-left: 1rem;
+        }
+    }
+
     &__box {
 
         &:not(:last-of-type) {

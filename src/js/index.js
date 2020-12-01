@@ -9,3 +9,12 @@ showSkills();
 showProjects();
 initListeneres();
 initAnimationHeader();
+
+window.addEventListener('resize', event => {
+    event.preventDefault();
+
+    const headerIcons = document.querySelectorAll('.header__icon-bg');
+    headerIcons.forEach(el => el.remove());
+
+    initAnimationHeader();
+})
