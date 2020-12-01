@@ -6,10 +6,19 @@
   "dependencies": {
     "node-sass": "^5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^4.1.1"
+  },
   "scripts": {
-    "build:scss": "node-sass ./src/scss/main.scss ./src/css/style.css",
-    "watch:scss": "node-sass ./src/scss/main.scss ./src/css/style.css -w"
+    "watch:scss": "node-sass ./src/scss/main.scss ./src/css/style.css -w",
+    "build:scss": "node-sass ./src/scss/main.scss ./src/css/style.compiled.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./src/css/style.compiled.css -o ./src/css/style.prefix.css",
+    "compress:css": "node-sass ./src/css/style.prefix.css ./dest/css/style.css --output-style compressed",
+    "build:js": "parcel build ./src/js/index.js  --out-dir ./dest/js --out-file bundle.js",
+    "predeploy": "npm run build:js",
+    "deploy": "gh-pages -d dest"
   },
   "repository": {
     "type": "git",

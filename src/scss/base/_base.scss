@@ -13,6 +13,14 @@ $color-special: #c0392b;
 
 
 
+// BREAK POINTS
+$bp-largest: 68.75em;    //1100px
+$bp-large: 59.375em;     //950px
+$bp-medium: 50em;        //800px
+$bp-medium2: 40.625em;   //650px
+$bp-small: 31.25em;      //500px
+$bp-smallest: 23.125em;  //370px  
+
 *,
 *::before,
 *::after {
@@ -24,6 +32,10 @@ $color-special: #c0392b;
 html {
     font-size: 62.5%;   // 1rem = 10px
     box-sizing: border-box;
+
+    @media only screen and(max-width: $bp-large) {
+       font-size: 50%;
+    }
 }
 
 body {

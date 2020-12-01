@@ -4,7 +4,8 @@
     // height: 100vh;
     background-color: $color-primary;
     // background-image: linear-gradient(to bottom, $color-primary, $color-primary-light);
-    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    // clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0% 0%, 50% calc(0% + 70px), 100% 0%, 100% calc(100% - 70px), 50% 100%, 0 calc(100% - 70px));
     // padding: 20rem 0;
 
     &__heading {
@@ -19,6 +20,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
+
+        @media only screen and(max-width: $bp-largest) {
+            gap: 2rem;
+        }
+
+        @media only screen and(max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__box{
@@ -28,6 +37,18 @@
         grid-template-columns: max-content 1fr;
         border-radius: 10px;
         overflow: hidden;
+
+        @media only screen and(max-width: $bp-largest) {
+            width: 45rem;
+        }
+
+        @media only screen and(max-width: $bp-medium) {
+            width: 50rem;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            width: 40rem;
+        }
     }
 
 
@@ -41,6 +62,11 @@
         grid-column: 1 / -1;
         position: relative;
         margin-bottom: 5rem;
+
+        @media only screen and(max-width: $bp-small) {
+            height: 15rem;
+            width: 100%;
+        }
 
         &::before {
             content: "";
@@ -62,6 +88,10 @@
         width: 100%;
         object-fit: fill;
         transition: all .5s;
+
+        @media only screen and(max-width: $bp-small) {
+            object-fit: cover;
+        }
     }
 
     &__project-title {

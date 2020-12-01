@@ -1,22 +1,48 @@
 .navigation {
-    background-color: $color-primary;
+    background-color: rgba($color-primary, .7);
     width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: all .5s;
+
+    @media only screen and(max-width: $bp-medium) {
+        background-color: rgba($color-primary, 1);
+    }
+    
+
+    &:hover {
+        background-color: rgba($color-primary, 1);
+    }
+
+    &:hover &__list {
+        color: rgba($color-white, 1);
+    }
 
     &__list{
         list-style: none;
         display: flex;
         justify-content: flex-end;
         font-size: 2rem;
-        color: $color-white;
+        color: rgba($color-white, .6);
+
+        @media only screen and(max-width: $bp-medium) {
+            color: rgba($color-white, 1);
+        }
     }
 
     &__item {
         margin-right: 3rem;
-        padding: 2rem;
+        padding: 1rem 2rem;
         cursor: pointer;
 
         &:hover {
             color: $color-secondary;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            margin-right: 1rem;
+            padding: 1rem;
         }
     }
 }

@@ -13,6 +13,18 @@
         gap: 10rem;
         justify-items: center;
 
+        @media only screen and(max-width: $bp-medium2) {
+            gap: 2rem;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            gap: 1rem;
+        }
+
+        // @media only screen and(max-width: $bp-small) {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+
     }
 
     &__feature {
@@ -30,6 +42,13 @@
         padding: 3rem;
         clip-path: circle(50%);
         // animation: change-icon-bg 5s infinite;
+
+        @media only screen and(max-width: $bp-small) {
+            width: 5rem;
+            height: 5rem;
+            padding: 0;
+            clip-path: none;
+        }
     }
 
     &__feature-text{
@@ -37,6 +56,13 @@
         font-size: 1.8rem;
         color: $color-primary;
         font-weight: 600;
+
+        @media only screen and(max-width: $bp-small) {
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        
     }
 
 
@@ -48,10 +74,18 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 0 4rem;
 
+        @media only screen and(max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+        }
+
         &--left {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media only screen and(max-width: $bp-medium) {
+                margin-bottom: 10rem;
+            }
         }
 
         &__right{
@@ -97,6 +131,19 @@
         font-size: 1.8rem;
         text-align: center;
         color: $color-primary-dark;
+        padding: 1rem;
+
+        @media only screen and(max-width: $bp-medium) {
+            padding: 0 10rem;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            padding: 0 3rem;
+        }
+
+        @media only screen and(max-width: $bp-smallest) {
+            padding: 0 1rem;
+        }
     }
 
     &__experience-education {

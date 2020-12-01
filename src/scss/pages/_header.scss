@@ -27,6 +27,10 @@
         span {
             color: $color-secondary;
         }
+
+        @media only screen and(max-width: $bp-small) {
+            font-size: 2rem;
+        }
     }
 
     &__social {
