@@ -32,7 +32,7 @@ const createTools = (tools) => {
     return result;
 }
 
-const createProject = ({projectName, image, tools, summary}) => {
+const createProject = ({projectName, image, tools, summary, liveLink, gitLink}) => {
     const toolsList = createTools(tools);
 
     const photo = `
@@ -51,8 +51,10 @@ const createProject = ({projectName, image, tools, summary}) => {
 
     const buttons = `
     <div class="portofolio__project-buttons">
-        <button class="portofolio__btn-primary">View Live</button>
-        <button class="portofolio__btn-secondary">View Source Code</button>
+        <!-- <button class="portofolio__btn-primary">View Live</button>
+        <button class="portofolio__btn-secondary">View Source Code</button> -->
+        <a target="_blank" rel="noopener noreferrer" href="${liveLink}" class="portofolio__btn-primary">View Live</a>
+        <a target="_blank" rel="noopener noreferrer" href="${gitLink}" class="portofolio__btn-secondary">View Source Code</a>
     </div>`;
 
     let projectBox = `
@@ -74,32 +76,41 @@ const showProjects = () => {
             image: 'img/crmag-client.png',
             tools: ['React', 'React Router DOM', 'JSX', 'CSS', 'Sass', 'CRMag API'],
             summary: 'This is an online store that consumes an API that I created',
-            liveBtn: ''
+            liveLink: 'https://adi1496.github.io/crmag-app/',
+            gitLink: 'https://github.com/adi1496/crmag-app'
         },
 
         {
             projectName: 'CRMag API',
             image: 'img/crmag-client-cover.png',
             tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
-            summary: 'This is an online store that consumes an API that I created'
+            summary: 'This is an online store that consumes an API that I created',
+            liveLink: '',
+            gitLink: 'https://github.com/adi1496/crmag'
         },
         {
             projectName: 'AssistCar',
             image: 'img/assistcar.png',
             tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
-            summary: 'This is an online store that consumes an API that I created'
+            summary: 'This is an online store that consumes an API that I created',
+            liveLink: 'http://assistcar.herokuapp.com/',
+            gitLink: 'https://github.com/adi1496/AssistCar'
         },
         {
             projectName: 'BudgetApp',
             image: 'img/budgetapp.png',
             tools: ['Vanilla JS', 'Firebase', 'Firestore', 'HTML', 'CSS', 'PWA'],
-            summary: 'This is an online store that consumes an API that I created'
+            summary: 'This is an online store that consumes an API that I created',
+            liveLink: 'https://adi1496.github.io/budget-app/',
+            gitLink: 'https://github.com/adi1496/budget-app'
         },
         {
             projectName: 'Fooders',
             image: 'img/fooders.png',
             tools: ['Vanilla JS', 'HTML', 'CSS', 'API', 'SCSS'],
-            summary: 'This is an online store that consumes an API that I created'
+            summary: 'This is an online store that consumes an API that I created',
+            liveLink: 'https://foodersapp.herokuapp.com/',
+            gitLink: 'https://github.com/adi1496/Fooders'
         }
     ];
 

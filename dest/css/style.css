@@ -368,14 +368,17 @@ body {
     justify-content: start;
     align-items: center;
     gap: 0 2rem; }
-    .portofolio__project-buttons button {
+    .portofolio__project-buttons a:link,
+    .portofolio__project-buttons a:visited {
       font-family: inherit;
       font-size: 1.8rem;
       padding: 1.6rem;
       border: none;
       color: #ffffff;
       outline: none;
-      cursor: pointer; }
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none; }
   .portofolio__btn-primary {
     background-color: #e67e22; }
     .portofolio__btn-primary:hover {
