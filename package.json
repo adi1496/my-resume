@@ -12,6 +12,7 @@
     "postcss-cli": "^4.1.1"
   },
   "scripts": {
+    "start": "live-server src/",
     "watch:scss": "node-sass ./src/scss/main.scss ./src/css/style.css -w",
     "build:scss": "node-sass ./src/scss/main.scss ./src/css/style.compiled.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./src/css/style.compiled.css -o ./src/css/style.prefix.css",

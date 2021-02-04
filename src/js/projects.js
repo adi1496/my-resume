@@ -34,24 +34,34 @@ const createTools = (tools) => {
 
 const createProject = ({projectName, image, tools, summary}) => {
     const toolsList = createTools(tools);
-    
-    const photo = `<figure class="portofolio__photo">
-    <img src="${image}" alt="img" class="portofolio__img">
-    <h4 class="heading-4 portofolio__project-title">${projectName}</h4>
+
+    const photo = `
+    <figure class="portofolio__photo">
+        <img src="${image}" alt="img" class="portofolio__img">
+        <h4 class="heading-4 portofolio__project-title">${projectName}</h4>
     </figure>`;
-    
-    const toolsContainer = `<div class="portofolio__tools">
-    <div class="portofolio__tools--title">Built with:</div>
-    <ul class="portofolio__tools--list">${toolsList}</ul>
+
+    const toolsContainer = `
+    <div class="portofolio__tools">
+        <div class="portofolio__tools--title">Built with:</div>
+        <ul class="portofolio__tools--list">${toolsList}</ul>
     </div>`;
-    
+
     const summaryDiv = `<div class="portofolio__project-summary">${summary}</div>`;
 
-    let projectBox = `<div class="portofolio__box">
-                        ${photo}
-                        ${toolsContainer}
-                        ${summaryDiv}
-                    </div>`;
+    const buttons = `
+    <div class="portofolio__project-buttons">
+        <button class="portofolio__btn-primary">View Live</button>
+        <button class="portofolio__btn-secondary">View Source Code</button>
+    </div>`;
+
+    let projectBox = `
+    <div class="portofolio__box">
+        ${photo}
+        ${toolsContainer}
+        ${summaryDiv}
+        ${buttons}
+    </div>`;
     
     portofolioContainer.insertAdjacentHTML('beforeend', projectBox);
 }
@@ -61,15 +71,34 @@ const showProjects = () => {
     const projects = [
         {
             projectName: 'CRMag-Client',
-            image: 'img/crmag-client-cover.png',
+            image: 'img/crmag-client.png',
             tools: ['React', 'React Router DOM', 'JSX', 'CSS', 'Sass', 'CRMag API'],
             summary: 'This is an online store that consumes an API that I created',
+            liveBtn: ''
         },
-    
+
         {
             projectName: 'CRMag API',
             image: 'img/crmag-client-cover.png',
             tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
+            summary: 'This is an online store that consumes an API that I created'
+        },
+        {
+            projectName: 'AssistCar',
+            image: 'img/assistcar.png',
+            tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
+            summary: 'This is an online store that consumes an API that I created'
+        },
+        {
+            projectName: 'BudgetApp',
+            image: 'img/budgetapp.png',
+            tools: ['Vanilla JS', 'Firebase', 'Firestore', 'HTML', 'CSS', 'PWA'],
+            summary: 'This is an online store that consumes an API that I created'
+        },
+        {
+            projectName: 'Fooders',
+            image: 'img/fooders.png',
+            tools: ['Vanilla JS', 'HTML', 'CSS', 'API', 'SCSS'],
             summary: 'This is an online store that consumes an API that I created'
         }
     ];
