@@ -359,8 +359,10 @@ body {
     position: relative; }
   .portofolio__project-summary {
     font-size: 1.6rem;
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    margin-left: 1rem; }
   .portofolio__project-buttons {
+    align-self: end;
     grid-column: 1 / -1;
     margin-top: 2rem;
     display: grid;
@@ -398,13 +400,14 @@ body {
       font-size: 1.8rem;
       font-weight: 600; }
     .portofolio__tools--list {
-      align-self: center;
+      margin-left: 4rem;
       list-style: none;
       font-size: 1.6rem;
       font-weight: 600;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1rem 10rem; }
+      gap: 1rem 10rem;
+      justify-items: start; }
 
 .contact {
   margin-top: -10rem;

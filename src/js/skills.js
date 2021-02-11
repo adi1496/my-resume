@@ -36,14 +36,14 @@ const createSkill = (props, container) => {
     container.insertAdjacentHTML('beforeend', skill);
 }
 
-
+// ['Microservices', 'icon-embed']
 
 const showSkills = () => {
     const frontendSkills = [['HTML', 'icon-html5"'], ['CSS', 'icon-css3'], ['SASS', 'icon-sass'], ['JavaScript', 'icon-javascript'], ['TypeScript', 'icon-typescript'], ['React', 'icon-react'], ['JSX', 'icon-react'], ['Light jQuery', 'icon-jquery']];
 
-    const backendSkills = [['Node.js', 'icon-node-dot-js'], ['Express', 'icon-node-dot-js'], ['MongoDB', 'icon-mongodb'], ['Mongoose', 'icon-mongodb'], ['Rest API', 'img/restAPI.png'], ['Auth-Security', 'icon-lock-stripes'], ['Microservices', 'icon-embed']];
+    const backendSkills = [['Node.js', 'icon-node-dot-js'], ['Express', 'icon-node-dot-js'], ['MongoDB', 'icon-mongodb'], ['Mongoose', 'icon-mongodb'], ['Rest API', 'img/restAPI.png'], ['Auth-Security', 'icon-lock-stripes']];
 
-    const otherSkills = [['NPM', 'icon-npm'], ['Postman', 'icon-postman'], ['Git', 'icon-git'], ['GitHub', 'icon-github'], ['Parcel', 'icon-embed'], ['Webpack', 'icon-webpack']];
+    const otherSkills = [['NPM', 'icon-npm'], ['Postman', 'icon-postman'], ['Git', 'icon-git'], ['GitHub', 'icon-github'], ['Parcel', 'icon-embed'], ['Webpack', 'icon-webpack'], ['Firebase', 'icon-firebase'], ['PWA', 'icon-embed']];
 
     frontendSkills.forEach(el => {
         createSkill(el, frontendSkillsContainer);
