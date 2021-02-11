@@ -79,23 +79,6 @@ const createProject = ({projectName, image, tools, summary, liveLink, gitLink}) 
 const showProjects = () => {
     const projects = [
         {
-            projectName: 'CRMag-App',
-            image: 'img/crmag-client.png',
-            tools: ['React', 'React Router DOM', 'JSX', 'CSS', 'Sass', 'CRMag API'],
-            summary: 'This is an online store that consumes the CRMag API. It was built using React JS. Unfortunately, the project is not done yet and the API is not hosted',
-            liveLink: 'https://adi1496.github.io/crmag-app/',
-            gitLink: 'https://github.com/adi1496/crmag-app'
-        },
-
-        {
-            projectName: 'CRMag API',
-            image: 'img/crmag-client-cover.png',
-            tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
-            summary: `The CRMag API is the part of an online store and was built to be used by CRMag App. It was created using Node.js and Express. This API is not hosted, so the 'View Live' anchor is disabled`,
-            liveLink: '#',
-            gitLink: 'https://github.com/adi1496/crmag'
-        },
-        {
             projectName: 'AssistCar',
             image: 'img/assistcar.png',
             tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
@@ -118,6 +101,22 @@ const showProjects = () => {
             summary: 'Fooders is an application created only with HTML, CSS and JavaScript and uses a 3rd party API to get the data',
             liveLink: 'https://foodersapp.herokuapp.com/',
             gitLink: 'https://github.com/adi1496/Fooders'
+        },
+        {
+            projectName: 'CRMag-App',
+            image: 'img/crmag-client.png',
+            tools: ['React', 'React Router DOM', 'JSX', 'CSS', 'Sass', 'CRMag API'],
+            summary: 'This is an online store that consumes the CRMag API. It was built using React JS. Unfortunately, the project is not done yet and the API is not hosted',
+            liveLink: 'https://adi1496.github.io/crmag-app/',
+            gitLink: 'https://github.com/adi1496/crmag-app'
+        },
+        {
+            projectName: 'CRMag API',
+            image: 'img/crmag-client-cover.png',
+            tools: ['Node.js', 'Express', 'Mongoose', 'Json Web Token', 'BcryptJS', 'Nodemailer'],
+            summary: `The CRMag API is the part of an online store and was built to be used by CRMag App. It was created using Node.js and Express. This API is not hosted, so the 'View Live' anchor is disabled`,
+            liveLink: '#',
+            gitLink: 'https://github.com/adi1496/crmag'
         }
     ];
 

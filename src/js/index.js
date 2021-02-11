@@ -3,12 +3,14 @@ import showProjects from './projects.js';
 import showSocialLinks from './social.js';
 import showSkills from './skills.js';
 import initListeneres from './listeners.js';
+import contactInit from './contact.js';
 
 showSocialLinks();
 showSkills();
 showProjects();
 initListeneres();
 initAnimationHeader();
+contactInit();
 
 window.addEventListener('resize', event => {
     event.preventDefault();
