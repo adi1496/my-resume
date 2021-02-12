@@ -3,3 +3,4 @@ node_modules/
 doNotCommit/
 .cache/
 src/js/contact.js
+src/js/utils/firebaseConfig.js
